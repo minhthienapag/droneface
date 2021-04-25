@@ -53,9 +53,9 @@ def detect_bboxes(net, ln, image):
     draw_image = image.copy()
 
     #blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (416, 416),swapRB=True, crop=False)
-    #blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (832, 832),swapRB=True, crop=False)
+    blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (832, 832),swapRB=True, crop=False)
     #blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (1024, 1024),swapRB=True, crop=False)
-    blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (1440, 1440),swapRB=True, crop=False)
+    #blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (1440, 1440),swapRB=True, crop=False)
     net.setInput(blob)
     layerOutputs = net.forward(ln) #list of 3 arrays, for each output layer.
 
