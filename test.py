@@ -93,9 +93,9 @@ def test_face_detection_recognition():
     
     #'''
     cv2.imwrite("test/output/final_detected_face.png", draw_image)
-    cv2.imshow('detected face on image', cv2.resize(draw_image, (draw_image.shape[1]//3, draw_image.shape[0]//3)))
-    cv2.waitKey()
-    cv2.destroyAllWindows()    
+    #cv2.imshow('detected face on image', cv2.resize(draw_image, (draw_image.shape[1]//3, draw_image.shape[0]//3)))
+    #cv2.waitKey()
+    #cv2.destroyAllWindows()    
     #'''
 
 # on single video
@@ -199,5 +199,5 @@ def test_face_detection_recognition_video():
 #test_face_detection()
 #face_verify.test_import()
 #test_face_recognition_test_loaded_images()
-#test_face_detection_recognition()
-test_face_detection_recognition_video()
+test_face_detection_recognition()
+#test_face_detection_recognition_video()

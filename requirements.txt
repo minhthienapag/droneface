@@ -1,0 +1,4 @@
+easydict==1.9
+bcolz==1.2.1
+tensorboardX==2.2
+numpy==1.16.1
