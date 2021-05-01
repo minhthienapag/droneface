@@ -1,6 +1,7 @@
 # droneface
 
 # init docker
+docker pull minhthienap/droneface
 docker run --gpus all -it -v path/to/folder/code:path/to/folder/code --name deepo-dl-cv-cuda11 pluto/deepo-dl-opencv-cuda11.0 bash
 
 # install some pip packets
